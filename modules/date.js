@@ -4,18 +4,18 @@ const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 const dateDisplay = document.getElementById('date'); 
 
 export function showDate() {
-	const dateObj = new Date();
-	const month = months[dateObj.getMonth()];
-	const day = dateObj.getDay();
-	const year = dateObj.getFullYear();
-	const hour = dateObj.getHours();
-	const minutes = dateObj.getMinutes();
-	const secnod = dateObj.getSeconds();
+	const dateObj = DateTime.now();
+	const month = dateObj.month;
+	const day = dateObj.day;
+	const year = dateObj.year;
+	const hour = dateObj.hour;
+	const minutes = dateObj.minute;
+	const secnod = dateObj.second;
 	let amPM = null;
 	if (hour >= 12) {
 			amPM = 'PM';
 	} else {
 			amPM = 'AM';
 	}
-	dateDisplay.innerText = `${month} ${day}th ${year}\\ ${hour}:${minutes}:${secnod}${amPM}`;
+	dateDisplay.innerText = `${month} ${day}th ${year} ${hour}:${minutes}:${secnod}${amPM}`;
 }
