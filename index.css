@@ -12,7 +12,7 @@
 header {
 	overflow: hidden;
 	top: 0;
-	position: fixed;
+	/* position: fixed; */
 	width: 100%;
 }
 
@@ -67,13 +67,51 @@ nav > ul > li a {
 #++++++++++++++++DESKTOP LIST BOOKS SECTION+++++++++++++++#
 ################################################################
 */
-.list-books {
+
+#book-heading {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 500;
+
+}
+
+.book-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid greenyellow;
-	height: 100vh;
 	margin: 20px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+#book-info {
+	border: 1px solid black;
+	padding: 10px;
+	width: 500px;
+}
+
+#book-info:nth-child(even){
+	background-color: #fff;
+}
+
+#book-info:nth-child(odd){
+	background-color: grey;
+}
+
+#p-tag {
+	flex: 1;
+}
+
+.close-btn {
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 12px 20px;
+}
+
+#book-add,
+#contact,
+#book-list {
+	display: none;
 }
 
 
@@ -86,10 +124,30 @@ nav > ul > li a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid red;
-	height: 100vh;
 	margin: 20px;
+	flex-direction: column;
+	padding: 3rem;
 }
+
+#form {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+}
+
+input[type='text'], 
+input[type='submit'] {
+	padding: 12px 20px;
+	margin: 10px;
+	width: 100%;
+	border-radius: 4px;
+}
+
+#submit-btn {
+	max-width: 100px;
+}
+
+
 
 
 /*
@@ -102,8 +160,6 @@ nav > ul > li a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid red;
-	height: 100vh;
 	margin: 20px;
 }
 

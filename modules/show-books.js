@@ -2,6 +2,7 @@ import { removeButton } from "./remove-books.js";
 
 const bukContainer = document.getElementById('book-list');
 
+
 export function showBooks(){
   const bookData = JSON.parse(localStorage.getItem('StorageBooks'));
 	bookData.forEach((item) => {
@@ -16,7 +17,7 @@ export function showBooks(){
 		paraTag.setAttribute('class', 'p-tag');
 		removeBtn.setAttribute('class', 'close-btn');
 		removeBtn.appendChild(document.createTextNode('Remove'));
-
+		
 		removeButton(parentNode, removeBtnIndex, removeBtn, bookData);
 		parentNode.append(paraTag, removeBtn);
 		bukContainer.append(parentNode);

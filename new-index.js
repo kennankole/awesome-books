@@ -4,9 +4,9 @@ import { showDate } from "./modules/date.js";
 
 const formContainer = document.getElementById('form')
 
-const bookShow = document.getElementById('book-list');
-const bookNew = document.getElementById('book-add');
-const showContact = document.getElementById('contact');
+const bookShow = document.getElementById('book-show');
+const bookNew = document.getElementById('book-new');
+const showContact = document.getElementById('show-contact');
 
 const btnMethod = new BookClass(title, author);
 
@@ -30,18 +30,18 @@ bookShow.addEventListener('click', (even) => {
 	document.getElementById('contact').style.display = 'none';
 });
 
-// add Book
+// // add Book
 bookNew.addEventListener('click', (even) => {
 	even.preventDefault();
-	document.getElementById('book-add').style.display = 'block';
+	document.getElementById('book-add').style.display = 'flex';
 	document.getElementById('book-list').style.display = 'none';
 	document.getElementById('contact').style.display = 'none';
 });
 
-// Contact
+// // Contact
 showContact.addEventListener('click', (even) => {
 	even.preventDefault();
 	document.getElementById('book-add').style.display = 'none';
 	document.getElementById('book-list').style.display = 'none';
-	document.getElementById('contact').style.display = 'block';
+	document.getElementById('contact').style.display = 'flex';
 });
