@@ -45,6 +45,16 @@ a {
 	padding: 0 10px;
 }
 
-
-
-
+/*
+################################################################
+#++++++++++++++++DESKTOP LIST BOOKS SECTION MENU+++++++++++++++#
+################################################################
+*/
+.list-books {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid greenyellow;
+	height: 100vh;
+	margin: 20px;
+}
