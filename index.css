@@ -9,6 +9,12 @@
 #+++++++++++++++++++++++DESKTOP NAVIGATION MENU++++++++++++++++#
 ################################################################
 */
+header {
+	overflow: hidden;
+	top: 0;
+	position: fixed;
+	width: 100%;
+}
 
 nav {
 	display: flex;
@@ -55,6 +61,21 @@ a {
 	justify-content: center;
 	align-items: center;
 	border: 1px solid greenyellow;
+	height: 100vh;
+	margin: 20px;
+}
+
+
+/*
+################################################################
+#++++++++++++++++DESKTOP ADD BOOKS SECTION MENU+++++++++++++++#
+################################################################
+*/
+.add-book {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid red;
 	height: 100vh;
 	margin: 20px;
 }
