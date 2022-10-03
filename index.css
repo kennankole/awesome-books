@@ -25,11 +25,11 @@ nav {
 	padding: 15px;
 }
 
-li {
+nav > ul > li {
 	list-style-type: none;
 }
 
-a {
+nav > ul > li a {
 	text-decoration: none;
 	font-size: 1.2rem;
 	color: black;
@@ -53,7 +53,7 @@ a {
 
 /*
 ################################################################
-#++++++++++++++++DESKTOP LIST BOOKS SECTION MENU+++++++++++++++#
+#++++++++++++++++DESKTOP LIST BOOKS SECTION+++++++++++++++#
 ################################################################
 */
 .list-books {
@@ -68,7 +68,7 @@ a {
 
 /*
 ################################################################
-#++++++++++++++++DESKTOP ADD BOOKS SECTION MENU++++++++++++++++#
+#++++++++++++++++DESKTOP ADD BOOKS SECTION++++++++++++++++#
 ################################################################
 */
 .add-book {
@@ -79,4 +79,44 @@ a {
 	height: 100vh;
 	margin: 20px;
 }
+
+
+/*
+################################################################
+#++++++++++++++++++++++++CONTACT SECTION+++++++++++++++++++++++#
+################################################################
+*/
+.contact-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid red;
+	height: 100vh;
+	margin: 20px;
+}
+
+.contact-title {
+	padding: 20px;
+	font-size: 1.7rem;
+}
+
+.contact-container {
+	padding: 20px;
+}
+
+.contact-container > p {
+	padding: 10px;
+	line-height: 10px;
+	font-size: 1.2rem;
+}
+
+.contact-details {
+	margin: 5px 50px;
+}
+
+.contact-details > li {
+	font-size: 1.1rem;
+}
+
 
