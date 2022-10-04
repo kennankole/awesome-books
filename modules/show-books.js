@@ -3,7 +3,7 @@ import { removeButton } from "./remove-books.js";
 const bukContainer = document.getElementById('book-list');
 
 
-export function showBooks(){
+export const showBooks = () =>{
   const bookData = JSON.parse(localStorage.getItem('StorageBooks'));
 	bookData.forEach((item) => {
 		const parentNode = document.createElement('div');

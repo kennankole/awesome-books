@@ -1,6 +1,6 @@
 # Awesome Books
 
-> This my Awesome Books web app
+> This my Awesome Books web app. You can add, view and remove books from the list.
 
 
 ## Built With

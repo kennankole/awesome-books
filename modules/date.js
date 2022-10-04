@@ -1,9 +1,8 @@
 import { DateTime } from "./luxon.js";
 
-const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const dateDisplay = document.getElementById('date'); 
 
-export function showDate() {
+export const showDate = () => {
 	const dateObj = DateTime.now();
 	const month = dateObj.month;
 	const day = dateObj.day;
